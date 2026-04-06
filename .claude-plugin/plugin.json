@@ -1,0 +1,8 @@
+{
+  "name": "claude-workflows",
+  "description": "Personal Claude Code development workflow toolkit — skills, scripts, and configurations for effective AI-assisted development",
+  "version": "1.0.0",
+  "author": {
+    "name": "Idan Ben-Ami"
+  }
+}

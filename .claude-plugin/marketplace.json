@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-workflows-marketplace",
+  "version": "1.0.0",
+  "description": "Personal Claude Code development workflow toolkit",
+  "owner": {
+    "name": "Idan Ben-Ami"
+  },
+  "plugins": [
+    {
+      "name": "claude-workflows",
+      "description": "Personal development workflow skills — beads tracking, plan-and-track, and scripts",
+      "version": "1.0.0",
+      "author": {
+        "name": "Idan Ben-Ami"
+      },
+      "source": "..",
+      "category": "development"
+    }
+  ]
+}
