@@ -18,37 +18,29 @@ Personal Claude Code development workflow toolkit. Portable skills, scripts, and
 
 ## Installation
 
-Register as a Claude Code plugin marketplace:
-
 ```bash
-# From within Claude Code
-/plugin marketplace add ~/projects/oss/claude-workflows
-/plugin install claude-workflows@claude-workflows
+./install.sh
 ```
 
-Or add to `~/.claude/settings.json` manually:
-
-```json
-{
-  "enabledPlugins": {
-    "claude-workflows@claude-workflows": true
-  }
-}
+Then in Claude Code:
+```bash
+/plugin marketplace add ~/projects/oss/claude-workflows/plugins
+/plugin install claude-workflows@claude-workflows-marketplace
 ```
 
 ## Structure
 
 ```
 claude-workflows/
-├── .claude-plugin/
-│   ├── plugin.json          # Plugin manifest
-│   └── marketplace.json     # Marketplace definition
-├── skills/
-│   ├── beads/SKILL.md       # Beads workflow
-│   └── plan-and-track/SKILL.md  # Planning workflow
+├── plugins/
+│   └── claude-workflows/          # Plugin (discovered by directory marketplace)
+│       └── skills/
+│           ├── beads/SKILL.md
+│           └── plan-and-track/SKILL.md
 ├── scripts/
-│   ├── statusline.sh        # Status bar (symlink from ~/.claude/)
-│   └── claude-session-audit.py  # Session analysis
+│   ├── statusline.sh              # Status bar (symlink from ~/.claude/)
+│   └── claude-session-audit.py    # Session analysis
+├── install.sh
 └── README.md
 ```
 
